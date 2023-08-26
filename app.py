@@ -11,7 +11,7 @@ def create_app():
     app = Flask(__name__)
     # Db Instance
     client = MongoClient(os.getenv('MONGODB_URI'))
-    app.db = client.remainderist
+    app.db = client.reminderist
 
     @app.route('/', methods=["POST", "GET"])
     def home():
