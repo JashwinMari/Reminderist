@@ -1,0 +1,185 @@
+html {
+  font-family: Lato, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navBar {
+  max-width: 640px;
+  padding: 0 20px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.navBarBrand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.appLogo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navBarLinks {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  color: grey;
+  font-size: 18px;
+}
+
+.navBarItem {
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.navBarLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formInput {
+  width: 100%;
+  margin: 0px auto;
+}
+
+#eventTitle {
+  width: 289px;
+  background-color: #f3f1f5;
+  padding: 5px 5px;
+  border: none;
+}
+
+#eventTime {
+  margin-left: 37px;
+  border: solid black 1px;
+  font-family: Lato, sans-serif;
+  padding: 3px 5px;
+}
+
+.formLabel {
+  display: inline;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formElement {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#entry {
+  margin-bottom: 0px;
+}
+
+.formSubmit {
+  align-self: flex-end;
+}
+
+.formTextarea {
+  font-family: Lato, sans-serif;
+  width: inherit;
+  height: 120px;
+  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #f3f1f5;
+}
+
+.formSubmit {
+  background-color: black;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.formSubmit:hover {
+  background-color: darkgray;
+}
+
+/* .toDo {
+  margin-top: 30px;
+} */
+
+.event {
+  margin-top: 30px;
+}
+
+.eventTitle {
+  display: inline;
+}
+
+.eventTime {
+  color: grey;
+}
+
+.eventDescription {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.eventContent {
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: darkgray;
+  color: black;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 14px;
+  margin-top: auto;
+}
+#github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#githubLogo {
+  margin-right: 8px;
+}
+
+#gitLink {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminderist - Home</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header class="navBar">
+        <div class="navBarBrand">
+            <img src="/static/reminderistLogo.svg" alt="Reminderist Logo" class="appLogo">Reminderist
+        </div>
+        <ul class="navBarLinks">
+            <li class="navBarItem"><a href="#" class="navBarLink">Home</a></li>
+            <li class="navBarItem"><a href="#" class="navBarLink">Events</a></li>
+            <li class="navBarItem"><a href="#" class="navBarLink">Calendar</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <section>
+            <h3>New Event</h3>
+            <form class="form" method="post">
+                <p class="formInput">
+                    <div class="formElement">
+                        <label for="eventTitle" class="formLabel">Event Title:</label>
+                        <input type="text" name="eventTitle" id="eventTitle">
+                    </div>
+                    <label for="entry" class="formLabel">Description:</label>
+                    <div class="formElement">
+                        <textarea name="eventDescription" id="entry" class="formTextarea" aria-label="Entry Content"></textarea>
+                    </div>
+                    <div class="formElement">
+                        <label for="eventTime" class="formLabel">Time :</label>
+                        <input type="datetime-local" name="eventTime" id="eventTime">
+                    </div>
+                </p>
+                <button type="submit" class="formSubmit">+</button>
+            </form>
+        </section>
+        <!-- <section class="toDo">
+            <h2>ToDo</h2>
+            <article class="toDoContent">
+                <ul>
+                    <li class="toDoItem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti eaque in similique natus sunt doloribus, nemo distinctio.</li>
+                </ul>
+            </article>
+        </section> -->
+        <section class="event">
+            <h3>Events</h3>
+            {% for event in events %}
+            <article class="eventContent">
+                <div>
+                    <h4 class="eventTitle">{{ event[0] }}</h4>
+                    <time class="eventTime" datetime="24-08-2023 20:00">• {{ event[2] }}</time>
+                </div>
+                <p class="eventDescription">{{ event[1] }}</p>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footerContent">
+            <p id="madeByJash">Made by Jash</p>
+            <div id="github">
+                <img src="/static/githubLogo.svg" alt="" width="25px" id="githubLogo"><a href="https://github.com/JashwinMari" id="gitLink">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
