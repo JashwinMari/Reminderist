@@ -77,7 +77,8 @@ body {
   width: 289px;
   background-color: #f3f1f5;
   padding: 5px 5px;
-  border: none;
+  border: solid black 1px;
+  border-radius: 5px;
 }
 
 #eventTime {
@@ -114,9 +115,10 @@ body {
   height: 120px;
   font-size: 14px;
   padding: 12px 20px;
-  border: none;
+  /* border: none; */
   margin-bottom: 20px;
   background-color: #f3f1f5;
+  border-radius: 10px;
 }
 
 .formSubmit {
@@ -160,13 +162,14 @@ body {
 }
 
 .footer {
-  background-color: darkgray;
+  background-color: #f3f1f5;
   color: black;
   text-align: center;
   padding: 15px 0;
   margin-top: 50px;
   font-size: 14px;
   margin-top: auto;
+  border-top: solid black 2px;
 }
 #github {
   display: flex;
